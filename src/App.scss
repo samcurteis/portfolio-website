@@ -1,0 +1,120 @@
+@mixin flexbox($theme: row) {
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+i{ display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 0 auto;
+        width: 60px;
+        font-size: 40px;
+}
+
+
+.component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+        width: 200px;
+    }
+}
+
+.hero {
+    background-image: url("./assets/personal-pics/bike-standing.jpg");
+    background-position: center;
+    height: 90vh;
+    width: 100vw;
+    top: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    width: 100vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 10vh;
+}
+
+.skills {
+    height: auto;
+    width: 80%;
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+img {
+    width: 40px;
+    padding: 10px;
+}
+.skill {
+    @include flexbox($theme: column);
+        padding: 5px;
+}
+}
+
+.projects {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .project {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px;
+        .project-content {
+            width: 30%;
+        }
+        img {
+           width: 480px;
+        }
+    }
+}
+
+    .about-me, .experience {
+    @include flexbox($theme: column);
+    container {
+    @include flexbox($theme: column);
+    }
+    .section {
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+.contact {
+    @include flexbox($theme: column);
+    .section {
+    @include flexbox;
+    }
+img {
+    width: 40px;
+    padding: 10px;
+}
+}
