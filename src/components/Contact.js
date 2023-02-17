@@ -1,4 +1,4 @@
-import emailIcon from '../assets/black-icons/email-icon.png'
+import emailIcon from '../assets/black-icons/white-email-icon.png'
 
 export default function Contact() {
     return (

@@ -1,4 +1,5 @@
 @mixin flexbox($theme: row) {
+
     display: flex;
     flex-direction: $theme;
     justify-content: center;
@@ -10,14 +11,22 @@ html {
 }
 
 * {
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+//   border: 1px solid black;
 }
 .page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #2F2C2D; 
+   a {
+    text-decoration: none;
+    color: #EBEAEF;
+       }
+    color: #EBEAEF;
 }
 
 i{ display: flex;
@@ -35,29 +44,78 @@ i{ display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px;
+    h2 {
+        margin: 10px;
+    }
     img {
         width: 200px;
     }
 }
 
 .hero {
-    background-image: url("./assets/personal-pics/bike-standing.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url("./assets/personal-pics/bike-standing.jpg");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 90vh;
+    // height: calc(100vh - 65px);
+    // height: -o-calc(100vh - 70px); /* opera */
+    // height: -webkit-calc(100vh - 70px); /* google, safari */
+    // height: -moz-calc(100vh - 70px); /* firefox */
     width: 100vw;
-    top: 0;
+    margin: 0;
+    height: 90vh;
+    justify-content: flex-start;
+    .content {
+        h1 {
+            margin: 0 auto;
+        }
+        .icons {
+            @include flexbox;
+            i {
+                margin: 0;
+                margin-top: 15px;
+            }
+        }
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    }
 }
 
-.navbar {
+.mobile-nav, .desktop-nav {
+    background-color: #415247;
     position: sticky;
     top: 0;
     justify-content: space-around;
     width: 100vw;
-    margin-right: 10px;
-    margin-left: 10px;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin: 0px, 10px, 0px, 10px;
+    min-height: 70px;
+}
+
+.desktop-nav {
     height: 10vh;
 }
 
+    .mobile-nav {
+        height: auto;
+        transition: height 1s ;
+        flex-direction: column;
+        .navbar-item {
+            margin: 20px;
+        }
+        .dropdown-icon {
+            width: 55px;
+            display: flex;
+            align-self: flex-end;
+            margin-right: 19px;
+        }
+    }
+    
 .skills {
     height: auto;
     width: 80%;
@@ -83,16 +141,26 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h2 {
+        margin-bottom: 20px;
+    }
     .project {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
-        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         .project-content {
             width: 30%;
         }
+        .project-content {
+            @include flexbox($theme: column);
+            align-items: flex-start;
+        }
         img {
-           width: 480px;
+            width: auto;
+            height: 400px;
         }
     }
 }
@@ -103,7 +171,8 @@ img {
     @include flexbox($theme: column);
     }
     .section {
-        width: 300px;
+        width: 66vw;
+        max-width: 800px;
         margin: 20px;
     }
 }
@@ -114,7 +183,15 @@ img {
     @include flexbox;
     }
 img {
+    background-color: #2F2C2D;
     width: 40px;
     padding: 10px;
 }
 }
+
+@media (max-width: 700px) { 
+        #project-image {
+            height: 200px;
+    }
+}
+
