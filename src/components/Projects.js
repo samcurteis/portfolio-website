@@ -3,16 +3,6 @@ import getyerboots from '../assets/gifs/getyerboots.gif'
 import memegenerator from '../assets/gifs/memegenerator.gif'
 import adventuremap from '../assets/gifs/adventuremap.gif'
 
-const projects = {
-    "Project 4": {
-        name: "Poet's Corner",
-        link: "",
-        readme: "",
-        duration: "9 days",
-        composition: "Solo",
-        content: "Full stack app using a Django API paired with a PostgreSQL database and React.js frontend, styled using a combination of Material UI and SASS. The app allows users to browse a database of over 15,000 poems and 3,000 authors seeded from Project Gutenberg’s free to use archive. Users can register an account, like and add their favourite poems or authors to their profile page, as well as write posts and like, favourite or comment on other user’s posts."
-    }
-}
  
 export default function Projects() {
     return (

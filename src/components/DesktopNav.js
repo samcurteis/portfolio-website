@@ -1,4 +1,3 @@
-import dropdownIcon from '../assets/black-icons/dropdown-icon.png'
 
 export default function DesktopNav() {
 
