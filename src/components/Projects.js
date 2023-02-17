@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="project" >  
         <div className="project-content">
 <h3>Project 4</h3>
-    <h3>Poet’s Corner - Readme</h3>
+    <h3><a href="https://poetscorner.netlify.app">Poet’s Corner</a> - <a href="https://github.com/samcurteis/ga-project-4-frontend/blob/main/README.md">Readme</a></h3>
         <h3>9 days - Solo</h3>
         <p>Full stack app using a Django API paired with a PostgreSQL database 
         and React.js frontend, styled using a combination of Material UI and 
@@ -27,7 +27,7 @@ export default function Projects() {
         <img id="project-image" alt="project 3 gif" src={adventuremap} />
         <div className="project-content">
         <h3>Project 3</h3>
-        <h3>Adventure Map -  Readme</h3>
+        <h3><a href="https://sams-adventure-map.netlify.app">Adventure Map</a> -  <a href="ihttps://github.com/samcurteis/GA-Project-3-Frontend/blob/development/README.md">Readme</a></h3>
         <h3>1 week - Group (3 people)</h3>
             <p>Full-Stack MERN app with CRUD functionality designed for users 
         to tally the countries they’ve visited, which is logged on a world map 
@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="project" >  
         <div className="project-content">
         <h3>Project 2</h3>
-        <h3>Meme Generator - ReadMe</h3>
+        <h3><a href="https://samsmemegenerator.netlify.app/">Meme Generator</a> - <a href="https://github.com/samcurteis/ga-project-2/blob/main/README.md">ReadMe</a></h3>
         <h3>48 hours - Group (3 people)</h3>
             <p>React.js app which interacted with a public API, where users 
         could generate a random meme or browse through an index of 100 memes, 
@@ -55,7 +55,7 @@ export default function Projects() {
         <img id="project-image" alt="project 1 gif" src={getyerboots} />
         <div className="project-content">
         <h3>Project 1</h3>
-        <h3>Get yer boots across the bog - Readme</h3>
+        <h3><a href="https://samcurteis.github.io/ga-project-1/">Get yer boots across the bog</a> - <a href="https://github.com/samcurteis/ga-project-1/blob/main/README.md">Readme</a></h3>
         <h3>1 week - solo project</h3>
             <p>Grid based frogger-style game built using HTML, CSS and 
         JavaScript. This project consolidated and put into practice all of 

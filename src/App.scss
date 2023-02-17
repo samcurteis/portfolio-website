@@ -45,7 +45,7 @@ i{ display: flex;
     align-items: center;
     flex-wrap: wrap;
     h2 {
-        margin: 10px;
+        margin: 30px;
     }
     img {
         width: 200px;
@@ -118,6 +118,9 @@ url("./assets/personal-pics/bike-standing.jpg");
 .skills {
     height: auto;
     width: 80%;
+    max-width: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 .icons {
     display: flex;
     flex-direction: row;
@@ -147,15 +150,26 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        justify-content: center;
+        margin: 30px;
         .project-content {
             width: 30%;
         }
         .project-content {
             @include flexbox($theme: column);
-            align-items: flex-start;
+            align-items: center;
+            margin: 40px;
+            h3 {
+                align-self: flex-start;
+                margin: 5px;
+            }
+            a { 
+                text-decoration: underline;
+            }
+            p {
+                margin-top: 10px;
+                text-align: justify;
+            }
         }
         img {
             width: auto;
@@ -174,10 +188,21 @@ img {
         max-width: 800px;
         margin: 20px;
     }
+    .headshot {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+    .brand-statement {
+        text-align: center;
+    }
 }
 
 .contact {
     @include flexbox($theme: column);
+    margin-bottom: 100px;
     .section {
     @include flexbox;
     }

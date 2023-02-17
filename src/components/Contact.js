@@ -4,19 +4,19 @@ export default function Contact() {
     return (
         <container id="contact" className="component contact">
         <h2>Contact</h2>
-        <div className="section">
-        <img alt="email icon" src={emailIcon} />
+        <a href="mailto:samcurteis@gmail.com">
+<div className="section">        <img alt="email icon" src={emailIcon} />
         <p>samcurteis@gmail.com</p>
-        </div>
-        <div className="section">
-        <i class="devicon-github-original"></i>
+        </div></a>
+        <a href="https://github.com/samcurteis">
+<div className="section">        <i class="devicon-github-original"></i>
         <p>/samcurteis</p>
-        </div>
-        <div className="section">
-        
+        </div></a>
+        <a href="https://www.linkedin.com/in/samcurteis/">
+<div className="section">        
         <i class="devicon-linkedin-plain"></i>
         <p>/in/samcurteis</p>
-        </div>
+        </div></a>
         </container>
     )
 };
