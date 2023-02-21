@@ -14,28 +14,35 @@ export default function AboutMe() {
         Software Engineering Immersive - Online - Oct 2022 - Jan 2023 - General Assembly
         </div >
         <div className="section">
-        CELTA Pass B - London - Sep - Dec 2018 - City and Islington College
-Studied teaching English as a second language, student analysis, lesson preparation and delivery with 120+ hours of input lessons and lesson practice.
+        <h3>CELTA Pass B</h3>
+        <h3>London</h3>
+        <h3>Sep - Dec 2018</h3>
+        <h3>City and Islington College</h3>
+<p>Studied teaching English as a second language, student analysis, lesson preparation and delivery with 120+ hours of input lessons and lesson practice.</p>
 
         </div >
         <div className="section">
-        BA in English with First Class Honours - London - Sep 2014 - Jun 2017
-Queen Mary: University of London
-Developed analytical skills in reading literature, literary theory, culture, philosophy and history from medieval to contemporary.
-Studied four modules per term, with twelve primary texts, secondary research and four essays per module.
-Conducted research and wrote essays of up to 4000 words on a range of subjects.
-Completed an independent 10,000 word dissertation on theories of performance and narrative in stand-up comedy.
-
+        <h3>BA in English with First Class Honours</h3>
+        <h3>London</h3>
+        <h3>Sep 2014 - Jun 2017</h3>
+ <h3>Queen Mary: University of London</h3>
+        <ul>
+<li>Developed analytical skills in reading literature, literary theory, culture, philosophy and history from medieval to contemporary.</li>
+<li>Studied four modules per term, with twelve primary texts, secondary research and four essays per module.</li>
+ <li>Conducted research and wrote essays of up to 4000 words on a range of subjects.</li>
+<li>Completed an independent 10,000 word dissertation on theories of performance and narrative in stand-up comedy.</li>
+</ul>
         </div >
         </ container>
         <container className="volunteering ">
         <h2>Volunteering</h2>
         <div className="section">
-        <p>Refunet - Online - Aug 2021 - Sep 2022
-Tutoring an hour of one to one English as a second language to refugees.
+        <p>Refunet - Online - Aug 2021 - Sep 2022</p>
+<p>Tutoring an hour of one to one English as a second language to refugees.
 </p>
         </div>
         <div className="section">
+        <p>2050 Miles - Scotland - Jun 2021</p>
         <p>Cycled 500 miles in 10 days as part of a 2050 mile relay around Britain to raise money for climate change charities.</p>
         </div>
         </ container>

@@ -22,6 +22,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #2F2C2D; 
+    overflow: hidden;
    a {
     text-decoration: none;
     color: #EBEAEF;
@@ -44,6 +45,7 @@ i{ display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
     h2 {
         margin: 30px;
     }
@@ -68,8 +70,11 @@ url("./assets/personal-pics/bike-standing.jpg");
     height: 90vh;
     justify-content: flex-start;
     .content {
-        h1 {
+        h1, h2 {
             margin: 0 auto;
+        }
+        h2 {
+            margin-top: 10px;
         }
         .icons {
             @include flexbox;

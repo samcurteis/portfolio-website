@@ -27,7 +27,7 @@ export default function Projects() {
         <img id="project-image" alt="project 3 gif" src={adventuremap} />
         <div className="project-content">
         <h3>Project 3</h3>
-        <h3><a href="https://sams-adventure-map.netlify.app">Adventure Map</a> -  <a href="ihttps://github.com/samcurteis/GA-Project-3-Frontend/blob/development/README.md">Readme</a></h3>
+        <h3><a href="https://sams-adventure-map.netlify.app">Adventure Map</a> -  <a href="https://github.com/samcurteis/GA-Project-3-Frontend/blob/development/README.md">Readme</a></h3>
         <h3>1 week - Group (3 people)</h3>
             <p>Full-Stack MERN app with CRUD functionality designed for users 
         to tally the countries they’ve visited, which is logged on a world map 
