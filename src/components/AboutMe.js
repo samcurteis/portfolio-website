@@ -5,6 +5,7 @@ export default function AboutMe() {
     function scrollInterests(){
         const container = document.getElementById("container");
         const containerWidth = container.offsetWidth;
+        console.log(containerWidth)
  container.scrollTo({
      top: 0,
      left: (containerWidth * 2) 

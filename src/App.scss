@@ -16,6 +16,17 @@ html {
     padding: 0;
 //   border: 1px solid black;
 }
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    transition: all 1s;
+    opacity: 1;
+}
+
 .page{
     display: flex;
     flex-direction: column;
@@ -24,7 +35,7 @@ html {
     background-color: #2F2C2D; 
     overflow: hidden;
     overflow: clip;
-   a {
+   a, button {
     text-decoration: none;
     color: #EBEAEF;
        }
@@ -107,6 +118,7 @@ url("./assets/personal-pics/bike-standing.jpg");
     position: sticky;
     overflow: visible;
     top: 0;
+    z-index: 1;
     justify-content: space-around;
     width: 100vw;
     flex-wrap: nowrap;
@@ -204,15 +216,21 @@ img {
     .section {
         margin: 10px;
         width: 100%;
+        .location {
+            font-style: italic;
+        }
+        ul, p {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
     }
 }
 
     .about-me, .experience {
         width: 80vw;
+        max-width: 900px;
     @include flexbox($theme: column);
         .piece {
-        width: 66vw;
-        max-width: 800px;
         margin: 20px;
     }
     .headshot {
@@ -228,6 +246,7 @@ img {
 }
 
 .about-me {
+        max-width: 900px;
     .brand-statement {
         margin: 20px;
         max-width: 600px;
@@ -236,12 +255,14 @@ img {
     .options {
         display: flex;
         align-self: flex-start;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 20px;
         button {
             background-color: #2F2C2D;
             font-weight: bold;
             padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             font-size: 15px;
         }
     }
@@ -249,10 +270,12 @@ img {
         overflow-x: scroll;
         scroll-behavior: smooth;
         width: 80vw;
+        max-width: 900px;
     .scroller {
         display: flex;
         flex-direction: row;
         width: 240vw;
+        max-width: 2700px;
     .section {
         width: 100%; 
     }

@@ -1,7 +1,10 @@
+import { useInView } from 'react-intersection-observer';
 
 export default function Hero() {
+const { ref: hero, inView: heroInView} = useInView();
+
      return (
-        <div className="component hero">
+        <div className={"component hero " + (heroInView ? "show" : "hidden")} ref={hero}>
          <div className="content">
         <h1>Samuel Curteis</h1>
          <h2>Junior Software Engineer</h2>

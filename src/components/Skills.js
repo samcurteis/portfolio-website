@@ -2,13 +2,15 @@
 // import TablePlus from '../assets/black-icons/tableplus.png'
 // import Cloudinary from '../assets/black-icons/cloudinary.png
 // import Netlify from '../assets/black-icons/netlify.svg'
+import { useInView } from 'react-intersection-observer';
 
 
 
 
 export default function Skills() {
+const { ref: skills, inView: skillsInView} = useInView();
     return (
-        <div  className="component skills">
+        <div  className={"component skills " + (skillsInView ? "show" : "hidden")} ref={skills}>
         <span className="anchor" id="skills"></span>
         <h2>Skills </h2>
         <div className="icons">
