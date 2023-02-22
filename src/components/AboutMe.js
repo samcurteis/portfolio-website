@@ -1,9 +1,9 @@
 import headshot from '../assets/personal-pics/headshot.jpg';
 
 export default function AboutMe() {
-        const container = document.getElementById("container");
 
     function scrollInterests(){
+        const container = document.getElementById("container");
         const containerWidth = container.offsetWidth;
  container.scrollTo({
      top: 0,
@@ -11,6 +11,7 @@ export default function AboutMe() {
  })
 }
     function scrollVolunteering(){
+        const container = document.getElementById("container");
         const containerWidth = container.offsetWidth;
  container.scrollTo({
      top: 0,
@@ -18,6 +19,7 @@ export default function AboutMe() {
  })
 }
     function scrollEducation(){
+        const container = document.getElementById("container");
  container.scrollTo({
      top: 0,
      left: 0 
