@@ -1,6 +1,29 @@
-import headshot from '../assets/personal-pics/headshot.jpg'
+import headshot from '../assets/personal-pics/headshot.jpg';
 
 export default function AboutMe() {
+        const container = document.getElementById("container");
+
+    function scrollInterests(){
+        const containerWidth = container.offsetWidth;
+ container.scrollTo({
+     top: 0,
+     left: (containerWidth * 2) 
+ })
+}
+    function scrollVolunteering(){
+        const containerWidth = container.offsetWidth;
+ container.scrollTo({
+     top: 0,
+     left: (containerWidth) 
+ })
+}
+    function scrollEducation(){
+ container.scrollTo({
+     top: 0,
+     left: 0 
+ })
+}
+
     return (
         <div className="component about-me">
         <span className="anchor" id="about-me"></span>
@@ -10,11 +33,11 @@ export default function AboutMe() {
         </div>
         <p className="piece brand-statement">I’m a junior software developer with previous experience teaching English as a first and second language. I decided to make the jump to software engineering because it draws on a lot of my interests while also being completely novel. I took the Software Engineering Immersive course at General Assembly to dive head first into this new world. Having taught and studied English, I’m fascinated by the power of words and language, and discovering that I can use them to build technologies has been a hugely rewarding experience. I hope to put the new skills I’ve learned to use in an environment which has the same goal in mind as my previous work: to help others to learn and grow.</p>
         <div className="options">
-            <button><a href="#education">Education</a></button>
-            <button><a href="#volunteering">Volunteering</a></button>
-            <button><a href="#interests">Interests</a></button>
+            <button onClick={scrollEducation}>Education</button>
+            <button onClick={scrollVolunteering}>Volunteering</button>
+            <button onClick={scrollInterests}>Interests</button>
         </div>
-        <div className="container">
+        <div className="container" id="container">
         <div className="scroller">
         <div  className="section">
         <span className="options-anchor" id="education"></span>
