@@ -6,7 +6,8 @@ import adventuremap from '../assets/gifs/adventuremap.gif'
  
 export default function Projects() {
     return (
-     <container id="projects" className="component projects">
+     <div  className="component projects">
+        <span className="anchor" id="projects"></span>
         <h2>Projects</h2>
       <div className="project" >  
         <div className="project-content">
@@ -59,10 +60,10 @@ export default function Projects() {
         <h3>1 week - solo project</h3>
             <p>Grid based frogger-style game built using HTML, CSS and 
         JavaScript. This project consolidated and put into practice all of 
-        the skills that I learned so far in the course and pushed me to use 
+        the skills that I learned at that stage in the course and pushed me to use 
         them creatively.</p>
         </div>
         </ div>
-        </container>
+        </div>
     )
 };

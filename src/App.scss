@@ -23,6 +23,7 @@ html {
     align-items: center;
     background-color: #2F2C2D; 
     overflow: hidden;
+    overflow: clip;
    a {
     text-decoration: none;
     color: #EBEAEF;
@@ -38,6 +39,18 @@ i{ display: flex;
         font-size: 40px;
 }
 
+.anchor, .options-anchor {
+     display: block;
+     height: 10vh; /*same height as header*/
+     margin-top: -10vh; /*same height as header*/
+     visibility: hidden;
+     width: 100%;
+ }
+
+ .options-anchor {
+     height: 20vh;
+     margin-top: -20vh;
+ }
 
 .component {
     display: flex;
@@ -92,6 +105,7 @@ url("./assets/personal-pics/bike-standing.jpg");
 .mobile-nav, .desktop-nav {
     background-color: #415247;
     position: sticky;
+    overflow: visible;
     top: 0;
     justify-content: space-around;
     width: 100vw;
@@ -99,6 +113,9 @@ url("./assets/personal-pics/bike-standing.jpg");
     margin: 0;
     margin: 0px, 10px, 0px, 10px;
     min-height: 70px;
+    p {
+        font-size: 22px;
+    }
 }
 
 .desktop-nav {
@@ -183,12 +200,17 @@ img {
     }
 }
 
-    .about-me, .experience {
-    @include flexbox($theme: column);
-    container {
-    @include flexbox($theme: column);
-    }
+.experience {
     .section {
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+    .about-me, .experience {
+        width: 80vw;
+    @include flexbox($theme: column);
+        .piece {
         width: 66vw;
         max-width: 800px;
         margin: 20px;
@@ -203,6 +225,39 @@ img {
     .brand-statement {
         text-align: center;
     }
+}
+
+.about-me {
+    .brand-statement {
+        margin: 20px;
+        max-width: 600px;
+    }
+
+    .options {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 20px;
+        button {
+            background-color: #2F2C2D;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+    .container {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 80vw;
+    .scroller {
+        display: flex;
+        flex-direction: row;
+        width: 240vw;
+    .section {
+        width: 100%; 
+    }
+}
+}
 }
 
 .contact {

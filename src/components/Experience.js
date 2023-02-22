@@ -1,6 +1,7 @@
 export default function Experience() {
     return (
-        <div id="experience" className="component experience">
+        <div className="component experience">
+        <span className="anchor" id="experience"></span>
         <h2>Experience</h2>
         <div className="section">
         <h3>Software Engineering Immersive</h3>
