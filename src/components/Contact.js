@@ -1,8 +1,10 @@
 import emailIcon from '../assets/black-icons/white-email-icon.png'
+import { useInView } from 'react-intersection-observer';
 
 export default function Contact() {
+const { ref: contact, inView: contactInView} = useInView();
     return (
-        <div className="component contact">
+        <div className={"component contact " + (contactInView ? "show" : "hidden")} ref={contact}>
         <span className="anchor" id="contact"></span>
         <h2>Contact</h2>
         <a href="mailto:samcurteis@gmail.com">

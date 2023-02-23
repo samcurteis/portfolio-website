@@ -1,11 +1,16 @@
 import headshot from '../assets/personal-pics/headshot.jpg';
+import { useInView } from 'react-intersection-observer';
 
 export default function AboutMe() {
+const { ref: title, inView: titleInView} = useInView();
+const { ref: headshotRef, inView: headshotRefInView} = useInView();
+const { ref: brandStatement, inView: brandStatementInView} = useInView();
+const { ref: options, inView: optionsInView} = useInView();
+const { ref: container, inView: containerInView} = useInView();
 
     function scrollInterests(){
         const container = document.getElementById("container");
         const containerWidth = container.offsetWidth;
-        console.log(containerWidth)
  container.scrollTo({
      top: 0,
      left: (containerWidth * 2) 
@@ -30,17 +35,17 @@ export default function AboutMe() {
     return (
         <div className="component about-me">
         <span className="anchor" id="about-me"></span>
-        <h2>About Me</h2>
-        <div className="headshot">
-        <img alt="headshot" src={headshot} />
+        <h2 className={(titleInView ? "show" : "hidden")} ref={title}>About Me</h2>
+        <div className={"headshot " + (headshotRefInView ? "show" : "hidden")} ref={headshotRef}>
+        <img  alt="headshot" src={headshot} />
         </div>
-        <p className="piece brand-statement">I’m a junior software developer with previous experience teaching English as a first and second language. I decided to make the jump to software engineering because it draws on a lot of my interests while also being completely novel. I took the Software Engineering Immersive course at General Assembly to dive head first into this new world. Having taught and studied English, I’m fascinated by the power of words and language, and discovering that I can use them to build technologies has been a hugely rewarding experience. I hope to put the new skills I’ve learned to use in an environment which has the same goal in mind as my previous work: to help others to learn and grow.</p>
-        <div className="options">
+        <p className={"piece brand-statement " + (brandStatementInView ? "show" : "hidden")} ref={brandStatement}>I’m a junior software developer with previous experience teaching English as a first and second language. I decided to make the jump to software engineering because it draws on a lot of my interests while also being completely novel. I took the Software Engineering Immersive course at General Assembly to dive head first into this new world. Having taught and studied English, I’m fascinated by the power of words and language, and discovering that I can use them to build technologies has been a hugely rewarding experience. I hope to put the new skills I’ve learned to use in an environment which has the same goal in mind as my previous work: to help others to learn and grow.</p>
+        <div className={"options " + (optionsInView ? "show" : "hidden")} ref={options}>
             <button onClick={scrollEducation}>Education</button>
             <button onClick={scrollVolunteering}>Volunteering</button>
             <button onClick={scrollInterests}>Interests</button>
         </div>
-        <div className="container" id="container">
+        <div className={"container " + (containerInView ? "show" : "hidden")} ref={container} id="container">
         <div className="scroller">
         <div  className="section">
         <span className="options-anchor" id="education"></span>
