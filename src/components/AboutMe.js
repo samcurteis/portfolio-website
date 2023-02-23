@@ -1,4 +1,6 @@
 import headshot from '../assets/personal-pics/headshot.jpg';
+import { IconContext } from "react-icons";
+import { BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 
 export default function AboutMe() {
@@ -7,6 +9,20 @@ const { ref: headshotRef, inView: headshotRefInView} = useInView();
 const { ref: brandStatement, inView: brandStatementInView} = useInView();
 const { ref: options, inView: optionsInView} = useInView();
 const { ref: container, inView: containerInView} = useInView();
+
+    function scrollRight(){
+        console.log('scroll right activated')
+        const container = document.getElementById("container");
+        const containerWidth = container.offsetWidth;
+ container.scrollLeft += containerWidth
+}
+
+    function scrollLeft(){
+        console.log('scroll left activated')
+        const container = document.getElementById("container");
+        const containerWidth = container.offsetWidth;
+ container.scrollLeft -= containerWidth
+}
 
     function scrollInterests(){
         const container = document.getElementById("container");
@@ -45,6 +61,9 @@ const { ref: container, inView: containerInView} = useInView();
             <button onClick={scrollVolunteering}>Volunteering</button>
             <button onClick={scrollInterests}>Interests</button>
         </div>
+        <div className="carousel">
+        <IconContext.Provider value={{ className: 'chevrons' }}>
+        <BsChevronBarLeft onClick={scrollLeft}/>
         <div className={"container " + (containerInView ? "show" : "hidden")} ref={container} id="container">
         <div className="scroller">
         <div  className="section">
@@ -104,6 +123,9 @@ const { ref: container, inView: containerInView} = useInView();
         </div>
         </div>
         </div>
+        </ div>
+        <BsChevronBarRight  onClick={scrollRight}/>
+        </IconContext.Provider>
         </ div>
         </ div>
         

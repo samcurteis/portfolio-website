@@ -10,6 +10,24 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  background: grey;
+  height: 5px;
+  width: 5px;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border: 1px solid black;
+  border-radius: 100vw;
+}
+
 * {
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -266,6 +284,15 @@ img {
             font-size: 15px;
         }
     }
+    .carousel {
+        @include flexbox;
+        .chevrons {
+            margin: 5px;
+            font-size: 40px;
+        }
+            .chevrons:hover {
+                cursor: pointer;
+            }
     .container {
         overflow-x: scroll;
         scroll-behavior: smooth;
@@ -279,6 +306,7 @@ img {
     .section {
         width: 100%; 
     }
+}
 }
 }
 }
