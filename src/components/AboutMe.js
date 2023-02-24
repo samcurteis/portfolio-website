@@ -4,11 +4,14 @@ import { BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 
 export default function AboutMe() {
-const { ref: title, inView: titleInView} = useInView();
-const { ref: headshotRef, inView: headshotRefInView} = useInView();
-const { ref: brandStatement, inView: brandStatementInView} = useInView();
-const { ref: options, inView: optionsInView} = useInView();
-const { ref: container, inView: containerInView} = useInView();
+   const setting = {
+    triggerOnce: true
+    }; 
+const { ref: title, inView: titleInView} = useInView(setting);
+const { ref: headshotRef, inView: headshotRefInView} = useInView(setting);
+const { ref: brandStatement, inView: brandStatementInView} = useInView(setting);
+const { ref: options, inView: optionsInView} = useInView(setting);
+const { ref: container, inView: containerInView} = useInView(setting);
 
     function scrollRight(){
         console.log('scroll right activated')
@@ -51,15 +54,15 @@ const { ref: container, inView: containerInView} = useInView();
     return (
         <div className="component about-me">
         <span className="anchor" id="about-me"></span>
-        <h2 className={(titleInView ? "show" : "hidden")} ref={title}>About Me</h2>
+        <h2 className={"title " + (titleInView ? "show" : "hidden")} ref={title}>About Me</h2>
         <div className={"headshot " + (headshotRefInView ? "show" : "hidden")} ref={headshotRef}>
         <img  alt="headshot" src={headshot} />
         </div>
         <p className={"piece brand-statement " + (brandStatementInView ? "show" : "hidden")} ref={brandStatement}>I’m a junior software developer with previous experience teaching English as a first and second language. I decided to make the jump to software engineering because it draws on a lot of my interests while also being completely novel. I took the Software Engineering Immersive course at General Assembly to dive head first into this new world. Having taught and studied English, I’m fascinated by the power of words and language, and discovering that I can use them to build technologies has been a hugely rewarding experience. I hope to put the new skills I’ve learned to use in an environment which has the same goal in mind as my previous work: to help others to learn and grow.</p>
         <div className={"options " + (optionsInView ? "show" : "hidden")} ref={options}>
-            <button onClick={scrollEducation}>Education</button>
-            <button onClick={scrollVolunteering}>Volunteering</button>
-            <button onClick={scrollInterests}>Interests</button>
+            <h4 onClick={scrollEducation}>EDUCATION</h4><span>|</span>
+            <h4  onClick={scrollVolunteering}>VOLUNTEERING</h4><span>|</span>
+            <h4  onClick={scrollInterests}>INTERESTS</h4>
         </div>
         <div className="carousel">
         <IconContext.Provider value={{ className: 'chevrons' }}>
@@ -68,7 +71,7 @@ const { ref: container, inView: containerInView} = useInView();
         <div className="scroller">
         <div  className="section">
         <span className="options-anchor" id="education"></span>
-        <h2>Education</h2>
+        <h2 className="title">Education</h2>
         <div className="piece">
         <h3>Software Engineering Immersive - Online - Oct 2022 - Jan 2023 - General Assembly</h3>
         </div >
@@ -95,7 +98,7 @@ const { ref: container, inView: containerInView} = useInView();
         </ div>
         <div  className="section ">
         <span className="options-anchor" id="volunteering"></span>
-        <h2>Volunteering</h2>
+        <h2 className="title">Volunteering</h2>
         <div className="piece">
         <h3>Refunet - Online - Aug 2021 - Sep 2022</h3>
 <p>Tutoring an hour of one to one English as a second language to refugees.
@@ -108,7 +111,7 @@ const { ref: container, inView: containerInView} = useInView();
         </ div>
         <div className="section">
         <span className="options-anchor" id="interests"></span>
-        <h2>Interests</h2>
+        <h2 className="title">Interests</h2>
         <div className="piece">
             <h3>Cycling</h3>
             <p>I regularly train and go out on long adventures on my bike. My longest so far has been just under 2000km!</p>

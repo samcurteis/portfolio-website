@@ -1,0 +1,25 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+        max-width: 900px;
+    .section {
+        margin: 10px;
+        width: 100%;
+        .location {
+            font-style: italic;
+        }
+        ul, p {
+            margin-top: 10px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    }
+}
+

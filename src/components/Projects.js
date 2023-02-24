@@ -6,16 +6,19 @@ import adventuremap from '../assets/gifs/adventuremap.gif'
 
  
 export default function Projects() {
-const { ref: title, inView: titleInView} = useInView();
-const { ref: p1Ref, inView: p1InView} = useInView();
-const { ref: p2Ref, inView: p2InView} = useInView();
-const { ref: p3Ref, inView: p3InView} = useInView();
-const { ref: p4Ref, inView: p4InView} = useInView();
+    const setting = {
+    triggerOnce: true
+    };
+const { ref: title, inView: titleInView} = useInView(setting);
+const { ref: p1Ref, inView: p1InView} = useInView(setting);
+const { ref: p2Ref, inView: p2InView} = useInView(setting);
+const { ref: p3Ref, inView: p3InView} = useInView(setting);
+const { ref: p4Ref, inView: p4InView} = useInView(setting);
 
     return (
      <div  className="component projects">
         <span className="anchor" id="projects"></span>
-        <h2 ref={title} className={(titleInView ? "show" : "hidden")}>Projects</h2>
+        <h2 ref={title} className={"title " + (titleInView ? "show" : "hidden")}>Projects</h2>
       <div className={"project " + (p4InView ? "show" : "hidden")} ref={p4Ref} >  
         <div className="project-content">
 <h3>Project 4</h3>
@@ -29,10 +32,12 @@ const { ref: p4Ref, inView: p4InView} = useInView();
         authors to their profile page, as well as write posts and like, 
         favourite or comment on other user’s posts.</p>
         </div>
+        <div className="buffer"></div>
         <img id="project-image" alt="project 4 gif" src={poetscorner} />
         </ div>
       <div className={"project " + (p3InView ? "show" : "hidden")} ref={p3Ref} >  
         <img id="project-image" alt="project 3 gif" src={adventuremap} />
+        <div className="buffer"></div>
         <div className="project-content">
         <h3>Project 3</h3>
         <h3><a href="https://sams-adventure-map.netlify.app">Adventure Map</a> -  <a href="https://github.com/samcurteis/GA-Project-3-Frontend/blob/development/README.md">Readme</a></h3>
@@ -57,10 +62,12 @@ const { ref: p4Ref, inView: p4InView} = useInView();
         styled using SASS and Bulma. Responsibilities included design layout 
         and styling, building components and handling API data.</p>
         </div>
+        <div className="buffer"></div>
         <img id="project-image" alt="project 2 gif" src={memegenerator} />
         </ div>
       <div className={"project " + (p1InView ? "show" : "hidden")} ref={p1Ref} >  
         <img id="project-image" alt="project 1 gif" src={getyerboots} />
+        <div className="buffer"></div>
         <div className="project-content">
         <h3>Project 1</h3>
         <h3><a href="https://samcurteis.github.io/ga-project-1/">Get yer boots across the bog</a> - <a href="https://github.com/samcurteis/ga-project-1/blob/main/README.md">Readme</a></h3>

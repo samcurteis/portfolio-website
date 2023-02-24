@@ -1,0 +1,62 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        margin-bottom: 20px;
+    }
+    .project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px;
+        .project-content {
+            max-width: 500px;
+        }
+        
+        .buffer {
+            margin: 15px;
+            width: 0;
+            height: 150px;
+            border-left: 1px solid rgba(255,255,255,.25);
+        }
+        
+        .project-content {
+            @include flexbox($theme: column);
+            align-items: center;
+            margin: 40px;
+            h3 {
+                align-self: flex-start;
+                margin: 5px;
+            }
+            a { 
+                text-decoration: underline;
+            }
+            p {
+                margin-top: 10px;
+                text-align: justify;
+            }
+        }
+        img {
+            width: auto;
+            height: 400px;
+            margin: 20px;
+            box-shadow: 10px 10px 50px black;
+            -moz-box-shadow: 10px 10px 50px black;
+      -webkit-box-shadow: 10px 10px 50px black;
+            filter: opacity(95%);
+            border-radius: 5px;
+        }
+    }
+}

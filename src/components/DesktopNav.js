@@ -1,7 +1,9 @@
 import { useInView } from 'react-intersection-observer';
 
 export default function DesktopNav() {
-const { ref: navbar, inView: navbarInView} = useInView();
+const { ref: navbar, inView: navbarInView} = useInView({
+    triggerOnce: true
+    });
 
     return (
         <div className={"component desktop-nav " + (navbarInView ? "show" : "hidden")} ref={navbar}>

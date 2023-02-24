@@ -1,0 +1,85 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+    .about-me, .experience {
+        width: 80vw;
+    @include flexbox($theme: column);
+        .piece {
+        margin: 20px;
+    }
+    .headshot {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid black;
+            box-shadow: 10px 10px 50px black;
+            -moz-box-shadow: 10px 10px 50px black;
+      -webkit-box-shadow: 10px 10px 50px black;
+    }
+    .brand-statement {
+        text-align: center;
+    }
+}
+
+.about-me {
+    .brand-statement {
+        margin: 20px;
+        max-width: 600px;
+    }
+
+    .options {
+        @include flexbox; 
+        margin-top: 30px;
+        margin-left: 20px;
+        h4, span {
+            font-weight: bold;
+            padding: 10px;
+            margin: 1px;
+            font-size: 15px;
+        }
+        h4:hover {
+            cursor: pointer;
+        }
+    }
+    .carousel {
+        @include flexbox;
+        .chevrons {
+            margin: 5px;
+            font-size: 40px;
+        }
+            .chevrons:hover {
+                cursor: pointer;
+            }
+    .container {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 80vw;
+        max-width: 900px;
+    .scroller {
+        display: flex;
+        width: 240vw;
+        max-width: 2700px;
+    .section {
+        width: 100%; 
+        margin-bottom: 10px;
+        h2 {
+            width: 90%;
+            margin: 0 auto;
+        }
+        ul, p {
+            margin-top: 10px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    }
+}
+}
+}
+}

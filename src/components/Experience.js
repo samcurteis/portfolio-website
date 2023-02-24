@@ -1,15 +1,17 @@
 import { useInView } from 'react-intersection-observer';
 export default function Experience() {
-    
-const { ref: title, inView: titleInView} = useInView();
-const { ref: sei, inView: seiInView} = useInView();
-const { ref: efl, inView: eflInView} = useInView();
-const { ref: lindamood, inView: lindamoodInView} = useInView();
+   const setting = {
+    triggerOnce: true
+    }; 
+const { ref: title, inView: titleInView} = useInView(setting);
+const { ref: sei, inView: seiInView} = useInView(setting);
+const { ref: efl, inView: eflInView} = useInView(setting);
+const { ref: lindamood, inView: lindamoodInView} = useInView(setting);
 
     return (
         <div className="component experience">
         <span className="anchor" id="experience"></span>
-        <h2 className={(titleInView ? "show" : "hidden")} ref={title}>Experience</h2>
+        <h2 className={"title " + (titleInView ? "show" : "hidden")} ref={title}>Experience</h2>
         <div className={"section " + (seiInView ? "show" : "hidden")} ref={sei}>
         <h3>Software Engineering Immersive</h3>
         <h3 className="location">London (online)</h3>

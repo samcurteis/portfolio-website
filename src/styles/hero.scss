@@ -1,0 +1,45 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url("../assets/personal-pics/bike-standing.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    // height: calc(100vh - 65px);
+    // height: -o-calc(100vh - 70px); /* opera */
+    // height: -webkit-calc(100vh - 70px); /* google, safari */
+    // height: -moz-calc(100vh - 70px); /* firefox */
+    width: 100vw;
+    margin: 0;
+    height: 90vh;
+    justify-content: flex-start;
+    .content {
+        @include flexbox($theme: 'column');
+        h1, h2 {
+            margin: 0 auto;
+            padding: 10px;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        .icons {
+            @include flexbox;
+            width: 100px;
+            i {
+                margin: 0;
+                margin-top: 15px;
+            }
+        }
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    }
+}

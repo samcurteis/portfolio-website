@@ -8,11 +8,13 @@ import { useInView } from 'react-intersection-observer';
 
 
 export default function Skills() {
-const { ref: skills, inView: skillsInView} = useInView();
+const { ref: skills, inView: skillsInView} = useInView({
+    triggerOnce: true
+    });
     return (
         <div  className={"component skills " + (skillsInView ? "show" : "hidden")} ref={skills}>
         <span className="anchor" id="skills"></span>
-        <h2>Skills </h2>
+        <h2 className="title">Skills </h2>
         <div className="icons">
         <div className="skill">  
         <i className="devicon-react-original"></i>       

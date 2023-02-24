@@ -1,0 +1,20 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    @include flexbox($theme: column);
+    margin-bottom: 100px;
+    .section {
+    @include flexbox;
+    }
+img {
+    background-color: #2F2C2D;
+    width: 40px;
+    padding: 10px;
+}
+}

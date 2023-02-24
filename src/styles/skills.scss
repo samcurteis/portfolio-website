@@ -1,0 +1,26 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    height: auto;
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.skill {
+    @include flexbox($theme: column);
+        padding: 5px;
+}
+}

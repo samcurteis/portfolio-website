@@ -1,0 +1,108 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: #f1f1f1;
+  height: 6px;
+  width: 6px;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background: grey;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+  border-radius: 100vw;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+//   border: 1px solid black;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    transition: all 1s;
+    opacity: 1;
+}
+
+.title {
+    padding: 10px;
+    padding-inline: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F2C2D; 
+    overflow: hidden;
+    overflow: clip;
+   a, button {
+    text-decoration: none;
+    color: #EBEAEF;
+       }
+    color: #EBEAEF;
+}
+
+i{ display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 0 auto;
+        width: 60px;
+        font-size: 40px;
+        text-shadow: 2px 9px 4px black;
+}
+
+.anchor, .options-anchor {
+     display: block;
+     height: 10vh; /*same height as header*/
+     margin-top: -10vh; /*same height as header*/
+     visibility: hidden;
+     width: 100%;
+ }
+
+ .options-anchor {
+     height: 20vh;
+     margin-top: -20vh;
+ }
+
+.component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h2 {
+        margin: 30px;
+    }
+    img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) { 
+        #project-image {
+            height: 200px;
+    }
+}
+

@@ -6,7 +6,14 @@ import AboutMe from './components/AboutMe.js';
 import Contact from './components/Contact.js';
 import Hero from './components/Hero.js';
 
-import './App.scss';
+import './styles/App.scss';
+import './styles/hero.scss';
+import './styles/navbar.scss';
+import './styles/skills.scss';
+import './styles/projects.scss';
+import './styles/experience.scss';
+import './styles/about-me.scss';
+import './styles/contact.scss';
 
 function App() {
         
