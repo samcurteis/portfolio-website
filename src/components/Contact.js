@@ -9,16 +9,16 @@ const { ref: contact, inView: contactInView} = useInView(setting);
     return (
         <div className={"component contact " + (contactInView ? "show" : "hidden")} ref={contact}>
         <span className="anchor" id="contact"></span>
-        <h2>Contact</h2>
-        <a href="mailto:samcurteis@gmail.com">
+        <h2 className='title'>Contact</h2>
+        <a href="mailto:samcurteis@gmail.com" target="_blank" rel="noopener noreferrer">
 <div className="section">        <img alt="email icon" src={emailIcon} />
         <p>samcurteis@gmail.com</p>
         </div></a>
-        <a href="https://github.com/samcurteis">
+        <a href="https://github.com/samcurteis" target="_blank" rel="noopener noreferrer">
 <div className="section">        <i className="devicon-github-original"></i>
         <p>/samcurteis</p>
         </div></a>
-        <a href="https://www.linkedin.com/in/samcurteis/">
+        <a href="https://www.linkedin.com/in/samcurteis/" target="_blank" rel="noopener noreferrer">
 <div className="section">        
         <i className="devicon-linkedin-plain"></i>
         <p>/in/samcurteis</p>

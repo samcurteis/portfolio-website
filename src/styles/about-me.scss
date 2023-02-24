@@ -7,7 +7,6 @@
 }
 
     .about-me, .experience {
-        width: 80vw;
     @include flexbox($theme: column);
         .piece {
         margin: 20px;
@@ -30,17 +29,24 @@
 .about-me {
     .brand-statement {
         margin: 20px;
+        margin-top: 30px;
+        width: 80vw;
         max-width: 600px;
     }
 
     .options {
         @include flexbox; 
+        flex-wrap: wrap;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-inline: 10px;
+        .border {
+            border-right: 1px solid rgba(255,255,255,.25);
+        }
         h4, span {
             font-weight: bold;
-            padding: 10px;
             margin: 1px;
+            padding: 4px;
+            padding-inline: 15px;
             font-size: 15px;
         }
         h4:hover {
@@ -50,7 +56,6 @@
     .carousel {
         @include flexbox;
         .chevrons {
-            margin: 5px;
             font-size: 40px;
         }
             .chevrons:hover {
@@ -68,15 +73,14 @@
     .section {
         width: 100%; 
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
         h2 {
-            width: 90%;
-            margin: 0 auto;
+            display: flex;
+            align-self: center;
         }
         ul, p {
             margin-top: 10px;
-        }
-        ul {
-            margin-left: 20px;
         }
     }
 }

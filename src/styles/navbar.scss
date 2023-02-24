@@ -1,12 +1,19 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
 
 .mobile-nav, .desktop-nav {
     box-shadow: 2px 4px 5px black;
     background-color: #415247;
     position: sticky;
     overflow: visible;
+    align-content: space-around;
     top: 0;
     z-index: 1;
-    justify-content: space-around;
     width: 100vw;
     flex-wrap: nowrap;
     margin: 0;
@@ -20,19 +27,41 @@
 
 .desktop-nav {
     height: 10vh;
+    .nav-options {
+        width: 90%;
+        @include flexbox;
+        justify-content: space-around;
+    }
 }
 
     .mobile-nav {
-        height: auto;
-        transition: height 1s ;
-        flex-direction: column;
-        .navbar-item {
-            margin: 20px;
-        }
+            @include flexbox($theme: column);
+            overflow: hidden;
+            width: 100%;
+        .icon-container {
+            @include flexbox;
+            height: 10vh;
+            .chevron {
+                font-size: 44px;
+            }
+        .navbar-options {
+            @include flexbox($theme: column);
         .dropdown-icon {
             width: 55px;
             display: flex;
             align-self: flex-end;
             margin-right: 19px;
+            margin-top: 4px;
         }
     }
+    }
+
+        .navbar-item {
+            margin: 20px;
+        }
+                .open {
+        max-height: 375px;
+    }
+
+    }
+

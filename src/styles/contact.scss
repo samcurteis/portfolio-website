@@ -8,13 +8,14 @@
 
 .contact {
     @include flexbox($theme: column);
-    margin-bottom: 100px;
+    margin-block: 50px 100px;
     .section {
     @include flexbox;
     }
 img {
-    background-color: #2F2C2D;
     width: 40px;
     padding: 10px;
+     -webkit-filter: drop-shadow(2px 9px 4px black);
+  filter: drop-shadow(2px 9px 4px black);
 }
 }

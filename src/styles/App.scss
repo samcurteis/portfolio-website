@@ -47,6 +47,7 @@ html {
     padding: 10px;
     padding-inline: 20px;
     border-bottom: 1px solid rgba(255,255,255,.25);
+    margin: 20px;
 }
 
 .page{
@@ -73,6 +74,11 @@ i{ display: flex;
         text-shadow: 2px 9px 4px black;
 }
 
+li {
+    margin: 5px;
+    margin-left: 15px;
+}
+
 .anchor, .options-anchor {
      display: block;
      height: 10vh; /*same height as header*/
@@ -88,21 +94,12 @@ i{ display: flex;
 
 .component {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    h2 {
-        margin: 30px;
-    }
     img {
         width: 200px;
     }
 }
 
-@media (max-width: 700px) { 
-        #project-image {
-            height: 200px;
-    }
-}
 

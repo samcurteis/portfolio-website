@@ -5,7 +5,7 @@ import MobileNav from './MobileNav.js'
 export default function Navbar() {
     
 const { width } = useViewport();
-const breakpoint = 500;
+const breakpoint = 580;
 
 
     return width < breakpoint ? <MobileNav/> : <DesktopNav />;

@@ -1,26 +1,32 @@
 import { useState } from 'react';
+import AnimateHeight from 'react-animate-height';
 import dropdownIcon from '../assets/black-icons/dropdown-icon.png'
+import { IconContext } from "react-icons";
+import { BiChevronDownCircle, BiChevronUpCircle } from 'react-icons/bi';
 
 export default function MobileNav() {
-const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+      const [height, setHeight] = useState(0);
 
-const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen)
-}
+const toggleDropdown = () => setHeight(height === 0 ? 'auto' : 0)
+
 
 
     return (
-        <container className="component mobile-nav" >
-        <img className="dropdown-icon" alt="dropdown icon" onClick={toggleDropdown} src={dropdownIcon} />
-        {isDropdownOpen &&
-        <>
+        <div className="component mobile-nav">
+        <div className="icon-container">
+        <IconContext.Provider value={{ className: "chevron" }}>
+        <span className="dropdown-icon" alt="dropdown icon"   aria-controls="id" src={dropdownIcon} onClick={toggleDropdown} >{height === 0 ? <BiChevronDownCircle /> : <BiChevronUpCircle />}</span>
+        </IconContext.Provider>
+        </div>
+        <AnimateHeight id="id" duration={250} height={height}>
+        <div className="navbar-options">
             <p className="navbar-item"><a href="#skills">Skills</a></p>
         <p className="navbar-item"><a href="#projects">Projects</a></p>
         <p className="navbar-item"><a href="#experience">Experience</a></p>
         <p className="navbar-item"><a href="#about-me">About Me</a></p>
         <p className="navbar-item"><a href="#contact">Contact</a></p>
-            </>
-    }
-        </container>
+        </div>
+        </AnimateHeight>
+        </div>
     )
 }
