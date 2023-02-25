@@ -51,9 +51,8 @@ html {
 }
 
 .page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox($theme: column);
+    position: relative;
     align-items: center;
     background-color: #2F2C2D; 
     overflow: hidden;

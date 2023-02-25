@@ -34,7 +34,7 @@
         max-width: 600px;
     }
 
-    .carousel {
+    .options {
         @include flexbox;
         justify-content: space-around;
         width: 100%;
@@ -43,7 +43,7 @@
             font-size: 40px;
             margin: 30px 10px;
         }
-    .options {
+    .buttons {
         @include flexbox; 
         max-width: 500px;
         flex-wrap: wrap;
