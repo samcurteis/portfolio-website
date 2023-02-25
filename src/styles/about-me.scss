@@ -34,10 +34,20 @@
         max-width: 600px;
     }
 
+    .carousel {
+        @include flexbox;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 800px;
+        .chevrons {
+            font-size: 40px;
+            margin: 30px 10px;
+        }
     .options {
         @include flexbox; 
+        max-width: 500px;
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin: 30px;
         margin-inline: 10px;
         .border {
             border-right: 1px solid rgba(255,255,255,.25);
@@ -53,14 +63,12 @@
             cursor: pointer;
         }
     }
-    .carousel {
-        @include flexbox;
-        .chevrons {
-            font-size: 40px;
         }
+
             .chevrons:hover {
                 cursor: pointer;
             }
+
     .container {
         overflow-x: scroll;
         scroll-behavior: smooth;
@@ -83,7 +91,6 @@
             margin-top: 10px;
         }
     }
-}
 }
 }
 }

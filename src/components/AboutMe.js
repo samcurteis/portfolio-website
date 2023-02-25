@@ -59,14 +59,17 @@ const { ref: container, inView: containerInView} = useInView(setting);
         <img  alt="headshot" src={headshot} />
         </div>
         <p className={"piece brand-statement " + (brandStatementInView ? "show" : "hidden")} ref={brandStatement}>I’m a junior software developer with previous experience teaching English as a first and second language. I decided to make the jump to software engineering because it draws on a lot of my interests while also being completely novel. I took the Software Engineering Immersive course at General Assembly to dive head first into this new world. Having taught and studied English, I’m fascinated by the power of words and language, and discovering that I can use them to build technologies has been a hugely rewarding experience. I hope to put the new skills I’ve learned to use in an environment which has the same goal in mind as my previous work: to help others to learn and grow.</p>
+        <IconContext.Provider value={{ className: 'chevrons' }}>
+        <div className="carousel">
+        <BsChevronBarLeft onClick={scrollLeft}/>
         <div className={"options " + (optionsInView ? "show" : "hidden")} ref={options}>
             <h4 className="border" onClick={scrollEducation}>EDUCATION</h4>
             <h4 className="border" onClick={scrollVolunteering}>VOLUNTEERING</h4>
             <h4  onClick={scrollInterests}>INTERESTS</h4>
         </div>
-        <div className="carousel">
-        <IconContext.Provider value={{ className: 'chevrons' }}>
-        <BsChevronBarLeft onClick={scrollLeft}/>
+        <BsChevronBarRight  onClick={scrollRight}/>
+        </div>
+        </IconContext.Provider>
         <div className={"container " + (containerInView ? "show" : "hidden")} ref={container} id="container">
         <div className="scroller">
         <div  className="section">
@@ -125,10 +128,7 @@ const { ref: container, inView: containerInView} = useInView(setting);
             <p>I love going to galleries, taking life drawing classes, watching movies, reading books, and learning how to cook different cuisines (especially Italian).</p>
         </div>
         </div>
-        </div>
         </ div>
-        <BsChevronBarRight  onClick={scrollRight}/>
-        </IconContext.Provider>
         </ div>
         </ div>
         
