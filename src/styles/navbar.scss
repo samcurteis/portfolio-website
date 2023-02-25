@@ -7,9 +7,9 @@
 }
 
 .mobile-nav, .desktop-nav {
-    display: block;
     box-shadow: 2px 4px 5px black;
     background-color: #415247;
+    display: flex;
     position: sticky;
     position: -webkit-sticky;
     overflow: visible;
