@@ -30,14 +30,15 @@
         }
     }
 .section-carousel {
+    @include flexbox;
 .section-container {
     width: 100%;
+    padding-top: 20px;
         max-width: 700px;
         overflow-x: auto;
         scroll-behavior: smooth;
     .section-scroller {
         @include flexbox;
-        align-items: flex-start;
         width: 1300%;
         max-width: 9100px;
         .image-container {

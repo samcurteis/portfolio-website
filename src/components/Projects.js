@@ -24,13 +24,13 @@ const { ref: p4Ref, inView: p4InView} = useInView(setting);
 <h3>Project 4</h3>
     <h3><a href="https://poetscorner.netlify.app" target="_blank" rel="noopener noreferrer">Poet’s Corner</a> - <a href="https://github.com/samcurteis/ga-project-4-frontend/blob/main/README.md" target="_blank" rel="noopener noreferrer">Readme</a></h3>
         <h3>9 days - Solo</h3>
-        <p>Full stack app using a Django API paired with a PostgreSQL database 
-        and React.js frontend, styled using a combination of Material UI and 
-        SASS. The app allows users to browse a database of over 15,000 poems 
-        and 3,000 authors seeded from Project Gutenberg’s free to use archive. 
+        <p><strong>Full-stack app</strong> using a <strong>Django API</ strong> paired with a <strong>PostgreSQL</strong> database 
+        and <strong>React.js</strong> frontend, styled using a combination of <strong>Material UI</strong> and  
+        <strong> SASS</strong>. The app allows users to browse a database of over 15,000 poems 
+        and 3,000 authors seeded from Project Gutenberg’s free-to-use archive. 
         Users can register an account, like and add their favourite poems or 
         authors to their profile page, as well as write posts and like, 
-        favourite or comment on other user’s posts.</p>
+        favourite or comment on other users' posts.</p>
         </div>
         <div className="buffer"></div>
         <a href="https://poetscorner.netlify.app" target="_blank" rel="noopener noreferrer"><img id="project-image" alt="project 4 gif" src={poetscorner} /></a>
@@ -42,14 +42,14 @@ const { ref: p4Ref, inView: p4InView} = useInView(setting);
         <h3>Project 3</h3>
         <h3><a href="https://sams-adventure-map.netlify.app" target="_blank" rel="noopener noreferrer">Adventure Map</a> -  <a href="https://github.com/samcurteis/GA-Project-3-Frontend/blob/development/README.md" target="_blank" rel="noopener noreferrer">Readme</a></h3>
         <h3>1 week - Group (3 people)</h3>
-            <p>Full-Stack MERN app with CRUD functionality designed for users 
+            <p><strong>Full-Stack MERN</strong> app with <strong>CRUD functionality</strong> designed for users 
         to tally the countries they’ve visited, which is logged on a world map 
         where countries are colour coded based on how many users have visited 
         them. Users can register and log in to accounts, write and post 
         pictures on the countries they’ve visited, view the posts for each 
         country and browse users to see where they’ve visited. Personal 
         responsibilities included developing backend CRUD functionality, 
-        frontend data handling and design layout using Material UI.</p>
+        frontend data handling and design layout using <strong>Material UI</strong>.</p>
         </div>
         </ div>
       <div className={"project " + (p2InView ? "show" : "hidden")} ref={p2Ref} >  
@@ -71,10 +71,10 @@ const { ref: p4Ref, inView: p4InView} = useInView(setting);
         <div className="project-content">
         <h3>Project 1</h3>
         <h3><a href="https://samcurteis.github.io/ga-project-1/" target="_blank" rel="noopener noreferrer">Get yer boots across the bog</a> - <a href="https://github.com/samcurteis/ga-project-1/blob/main/README.md" target="_blank" rel="noopener noreferrer">Readme</a></h3>
-        <h3>1 week - solo project</h3>
-            <p>Grid based frogger-style game built using HTML, CSS and 
-        JavaScript. This project consolidated and put into practice all of 
-        the skills that I learned at that stage in the course and pushed me to use 
+        <h3>1 week - Solo</h3>
+            <p>Grid-based frogger-style game built using <strong>HTML</strong>, <strong>CSS</strong> and 
+        <strong> JavaScript</strong>. This project consolidated and put into practice all of 
+        the skills that I had learnt during the first three weeks of the Software Engineering Immersive course at General Assembly, and pushed me to use 
         them creatively.</p>
         </div>
         </ div>

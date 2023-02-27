@@ -25,7 +25,7 @@ export default function Education() {
 <li>Developed analytical skills in reading literature, literary theory, culture, philosophy and history from medieval to contemporary.</li>
 <li>Studied four modules per term, with twelve primary texts, secondary research and four essays per module.</li>
  <li>Conducted research and wrote essays of up to 4000 words on a range of subjects.</li>
-<li>Completed an independent 10,000 word dissertation on theories of performance and narrative in stand-up comedy.</li>
+<li>Completed an independent 10,000-word dissertation on theories of performance and narrative in stand-up comedy.</li>
 </ul>
         </div >
         </ div>
