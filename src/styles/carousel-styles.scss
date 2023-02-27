@@ -1,0 +1,59 @@
+
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    @include flexbox($theme: column);
+    justify-content: flex-start;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  padding-inline: 10px;
+  ::-webkit-scrollbar {
+    background-color: #2F2C2D; 
+  }
+      ::-webkit-scrollbar-track {
+          margin-inline: 50px;
+    background-color: #2F2C2D; 
+}
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255,.25);
+    }
+    .mobile-chevrons {
+        .chevrons {
+    font-size: 30px;
+    margin: 20px 10px;
+        }
+    }
+.section-carousel {
+.section-container {
+    width: 100%;
+        max-width: 700px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    .section-scroller {
+        @include flexbox;
+        align-items: flex-start;
+        width: 1300%;
+        max-width: 9100px;
+        .image-container {
+            @include flexbox;
+            width: 100%;
+            padding: 5px;
+            img {
+                width: 90%;
+                border-radius: 7px;
+                margin-bottom: 10px;
+                box-shadow: 5px 5px 10px black;
+            }
+    }
+}
+}
+}
+}
+
+

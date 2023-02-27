@@ -1,0 +1,123 @@
+@mixin flexbox($theme: row) {
+
+    display: flex;
+    flex-direction: $theme;
+    justify-content: center;
+    align-items: center;
+}
+
+    .about-me, .experience {
+    @include flexbox($theme: column);
+        .piece {
+        margin: 20px;
+    }
+    .headshot {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid black;
+            box-shadow: 5px 5px 20px black;
+            -moz-box-shadow: 5px 5px 20px black;
+      -webkit-box-shadow: 5px 5px 20px black;
+    }
+    .brand-statement {
+        text-align: center;
+    }
+
+    .image {
+        width: 95%;
+        border-radius: 7px;
+        margin-top: 25px;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .chevrons {
+    font-size: 40px;
+    margin: 30px 10px;
+}
+}
+
+.about-me {
+    .brand-statement {
+        margin: 20px;
+        margin-top: 30px;
+        width: 80vw;
+        max-width: 600px;
+    }
+
+    .options {
+        @include flexbox;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 800px;
+        .chevrons {
+            font-size: 40px;
+            margin: 30px;
+        }
+    .buttons {
+        @include flexbox; 
+        max-width: 500px;
+        flex-wrap: wrap;
+        margin: 30px;
+        margin: 11px;
+        .border {
+            border-right: 1px solid rgba(255,255,255,.25);
+        }
+        h4, span {
+            font-weight: bold;
+            margin: 1px;
+            padding: 4px;
+            padding-inline: 15px;
+            font-size: 15px;
+        }
+        h4:hover {
+            cursor: pointer;
+        }
+    }
+        }
+
+            .chevrons:hover {
+                cursor: pointer;
+            }
+
+    .container {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 80vw;
+        max-width: 900px;
+    .scroller {
+        display: flex;
+        width: 400vw;
+        max-width: 4500px;
+    .section {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        h2 {
+            display: flex;
+            align-self: center;
+        }
+        ul, p {
+            margin-top: 10px;
+        }
+    }
+}
+}
+}
+
+@media (max-width: 373px) {
+    .about-me {
+        .options {
+        .buttons {
+            .border {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,.25);
+                padding-block: 5px;
+            }
+        }
+    }
+}
+}
+

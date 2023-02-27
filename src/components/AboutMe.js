@@ -3,6 +3,12 @@ import { IconContext } from "react-icons";
 import { BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 
+import Education from './AboutMeComponents/Education.js';
+import Other from './AboutMeComponents/Other.js';
+import Cycling from './AboutMeComponents/Cycling.js';
+import Film from './AboutMeComponents/Film.js';
+import Photography from './AboutMeComponents/Photography.js';
+
 export default function AboutMe() {
    const setting = {
     triggerOnce: true
@@ -27,29 +33,14 @@ const { ref: container, inView: containerInView} = useInView(setting);
  container.scrollLeft -= containerWidth
 }
 
-    function scrollInterests(){
+    function scrollSection(e){
         const container = document.getElementById("container");
         const containerWidth = container.offsetWidth;
  container.scrollTo({
      top: 0,
-     left: (containerWidth * 2) 
+     left: (containerWidth * e.target.id) 
  })
-}
-    function scrollVolunteering(){
-        const container = document.getElementById("container");
-        const containerWidth = container.offsetWidth;
- container.scrollTo({
-     top: 0,
-     left: (containerWidth) 
- })
-}
-    function scrollEducation(){
-        const container = document.getElementById("container");
- container.scrollTo({
-     top: 0,
-     left: 0 
- })
-}
+    }
 
     return (
         <div className="component about-me">
@@ -63,71 +54,22 @@ const { ref: container, inView: containerInView} = useInView(setting);
         <div className={"options " + (optionsInView ? "show" : "hidden")} ref={options}>
         <BsChevronBarLeft onClick={scrollLeft}/>
         <div className="buttons " >
-            <h4 className="border" onClick={scrollEducation}>EDUCATION</h4>
-            <h4 className="border" onClick={scrollVolunteering}>VOLUNTEERING</h4>
-            <h4  onClick={scrollInterests}>INTERESTS</h4>
+            <h4 className="border" onClick={scrollSection} id={0}>EDUCATION</h4>
+            <h4 className="border" onClick={scrollSection} id={1}>CYCLING</h4>
+            <h4 className="border" onClick={scrollSection} id={2}>FILM</h4>
+            <h4 className="border" onClick={scrollSection} id={3}>PHOTOGRAPHY</h4>
+            <h4  onClick={scrollSection} id={4}>OTHER</h4>
         </div>
         <BsChevronBarRight  onClick={scrollRight}/>
         </div>
         </IconContext.Provider>
         <div className={"container " + (containerInView ? "show" : "hidden")} ref={container} id="container">
         <div className="scroller">
-        <div  className="section">
-        <span className="options-anchor" id="education"></span>
-        <h2 className="title">Education</h2>
-        <div className="piece">
-        <h3>Software Engineering Immersive - Online - Oct 2022 - Jan 2023 - General Assembly</h3>
-        </div >
-        <div className="piece">
-        <h3>CELTA Pass B</h3>
-        <h3>London</h3>
-        <h3>Sep - Dec 2018</h3>
-        <h3>City and Islington College</h3>
-<p>Studied teaching English as a second language, student analysis, lesson preparation and delivery with 120+ hours of input lessons and lesson practice.</p>
-
-        </div >
-        <div className="piece">
-        <h3>BA in English with First Class Honours</h3>
-        <h3>London</h3>
-        <h3>Sep 2014 - Jun 2017</h3>
- <h3>Queen Mary: University of London</h3>
-        <ul>
-<li>Developed analytical skills in reading literature, literary theory, culture, philosophy and history from medieval to contemporary.</li>
-<li>Studied four modules per term, with twelve primary texts, secondary research and four essays per module.</li>
- <li>Conducted research and wrote essays of up to 4000 words on a range of subjects.</li>
-<li>Completed an independent 10,000 word dissertation on theories of performance and narrative in stand-up comedy.</li>
-</ul>
-        </div >
-        </ div>
-        <div  className="section ">
-        <span className="options-anchor" id="volunteering"></span>
-        <h2 className="title">Volunteering</h2>
-        <div className="piece">
-        <h3>Refunet - Online - Aug 2021 - Sep 2022</h3>
-<p>Tutoring an hour of one to one English as a second language to refugees.
-</p>
-        </div>
-        <div className="piece">
-        <h3>2050 Miles - Scotland - Jun 2021</h3>
-        <p>Cycled 500 miles in 10 days as part of a 2050 mile relay around Britain to raise money for climate change charities.</p>
-        </div>
-        </ div>
-        <div className="section">
-        <span className="options-anchor" id="interests"></span>
-        <h2 className="title">Interests</h2>
-        <div className="piece">
-            <h3>Cycling</h3>
-            <p>I regularly train and go out on long adventures on my bike. My longest so far has been just under 2000km!</p>
-        </div>
-        <div className="piece">
-            <h3>Languages</h3>
-            <p>I love to learn languages by listening to music, going to language cafes, taking classes and using apps.</p>
-        </div>
-        <div className="piece">
-            <h3>Art & Culture</h3>
-            <p>I love going to galleries, taking life drawing classes, watching movies, reading books, and learning how to cook different cuisines (especially Italian).</p>
-        </div>
-        </div>
+        <Education />
+        <Cycling />
+        <Film />
+        <Photography />
+        <Other />
         </ div>
         </ div>
         </ div>

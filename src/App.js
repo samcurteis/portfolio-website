@@ -6,14 +6,16 @@ import AboutMe from './components/AboutMe.js';
 import Contact from './components/Contact.js';
 import Hero from './components/Hero.js';
 
-import './styles/App.scss';
-import './styles/hero.scss';
-import './styles/navbar.scss';
-import './styles/skills.scss';
-import './styles/projects.scss';
-import './styles/experience.scss';
-import './styles/about-me.scss';
-import './styles/contact.scss';
+import './styles/app-styles.scss';
+import './styles/hero-styles.scss';
+import './styles/navbar-styles.scss';
+import './styles/skills-styles.scss';
+import './styles/projects-styles.scss';
+import './styles/experience-styles.scss';
+import './styles/about-me-styles.scss';
+import './styles/contact-styles.scss';
+
+import './styles/carousel-styles.scss';
 
 function App() {
         
