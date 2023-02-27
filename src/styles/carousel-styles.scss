@@ -9,6 +9,7 @@
 
 .section {
     @include flexbox($theme: column);
+    align-items: flex-start;
     justify-content: flex-start;
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;

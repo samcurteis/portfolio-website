@@ -14,7 +14,7 @@
     .headshot {
         width: 200px;
         height: 200px;
-        overflow: hidden;
+        overflow: hidden; 
         border-radius: 50%;
         border: 3px solid black;
             box-shadow: 5px 5px 20px black;
@@ -24,6 +24,7 @@
     .brand-statement {
         text-align: center;
     }
+
 
     .image {
         width: 95%;
@@ -91,7 +92,7 @@
         width: 400vw;
         max-width: 4500px;
     .section {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         width: 80vw;
