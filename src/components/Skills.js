@@ -17,32 +17,25 @@ const { ref: skills, inView: skillsInView} = useInView({
         <h2 className="title">Skills </h2>
         <div className="icons">
         <div className="skill">  
-        <i className="devicon-react-original"></i>       
-             <p className="skill-name">React.js</p>
-        </div>  
-        <div className="skill">  
         <i className="devicon-html5-plain"></i>          
         <p className="skill-name">HTML</p>
+        </div>
+        <div className="skill">  
+        <i class="devicon-css3-plain"></i>
+        <p className="skill-name">CSS</p>
         </div>  
+  
         <div className="skill">  
         <i className="devicon-javascript-plain"></i>     
              <p className="skill-name">JavaScript</p>
         </div>  
         <div className="skill">  
-        <i className="devicon-babel-plain"></i>          
-             <p className="skill-name">Babel</p>
-        </div>  
-        <div className="skill">  
-        <i className="devicon-bulma-plain"></i>          
-             <p className="skill-name">Bulma</p>
+        <i className="devicon-react-original"></i>       
+             <p className="skill-name">React.js</p>
         </div>  
         <div className="skill">  
         <i className="devicon-sass-original"></i>        
              <p className="skill-name">SASS</p>
-        </div>  
-        <div className="skill">  
-        <i className="devicon-materialui-plain"></i>     
-             <p className="skill-name">Material UI</p>
         </div>  
         <div className="skill">  
         <i className="devicon-express-original"></i>     
@@ -91,14 +84,6 @@ const { ref: skills, inView: skillsInView} = useInView({
         <div className="skill">  
         <i className="devicon-trello-plain"></i>         
         <p className="skill-name">Trello</p>
-        </div>         
-        <div className="skill">  
-        <i className="devicon-vim-plain"></i>            
-        <p className="skill-name">Vim</p>
-        </div>         
-        <div className="skill">  
-        <i className="devicon-vscode-plain"></i>         
-        <p className="skill-name">VSCode</p>
         </div>         
 </div>
         </div>

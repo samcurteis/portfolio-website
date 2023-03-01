@@ -57,9 +57,9 @@ const { ref: p4Ref, inView: p4InView} = useInView(setting);
         <h3>Project 2</h3>
         <h3><a href="https://samsmemegenerator.netlify.app/" target="_blank" rel="noopener noreferrer">Meme Generator</a> - <a href="https://github.com/samcurteis/ga-project-2/blob/main/README.md" target="_blank" rel="noopener noreferrer">ReadMe</a></h3>
         <h3>48 hours - Group (3 people)</h3>
-            <p>React.js app which interacts with a public API, where users 
+            <p><strong>React.js</strong> app which interacts with a public API, where users 
         can generate a random meme or browse through an index of 100 memes, 
-        styled using SASS and Bulma. Responsibilities included design layout 
+        styled using <strong>SASS</strong> and <strong>Bulma</strong>. Responsibilities included design layout 
         and styling, building components and handling API data.</p>
         </div>
         <div className="buffer"></div>

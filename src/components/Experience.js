@@ -23,7 +23,7 @@ const { ref: lindamood, inView: lindamoodInView} = useInView(setting);
         daily homework, and four projects.</p>
         </ div>
         <div className={"experience-section " + (eflInView ? "show" : "hidden")} ref={efl}>
-        <h3>Freelance teacher of English as a first and second language</h3>
+        <h3>Teacher of English as a first and second language</h3>
         <h3 className="location">UK, Italy, Spain</h3>
         <h3>Jan 2018 - Sep 2022</h3>
         <h3>Freelance</h3>
