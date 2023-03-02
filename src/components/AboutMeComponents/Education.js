@@ -2,7 +2,7 @@
 
 export default function Education() {
     return (
-        <div  className="section">
+        <div  className="section education">
         <span className="options-anchor" id="education"></span>
         <h2 className="title">Education</h2>
         <div className="piece">

@@ -92,6 +92,8 @@
         width: 400vw;
         max-width: 4500px;
     .section {
+        @include flexbox($theme: column);
+        justify-content: flex-start;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -103,6 +105,9 @@
         ul, p {
             margin-top: 10px;
         }
+    }
+    .education {
+        align-items: flex-start;
     }
 }
 }
