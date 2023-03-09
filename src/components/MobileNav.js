@@ -2,7 +2,7 @@ import { useState } from 'react';
 import AnimateHeight from 'react-animate-height';
 import dropdownIcon from '../assets/black-icons/dropdown-icon.png'
 import { IconContext } from "react-icons";
-import { BiChevronDownCircle, BiChevronUpCircle } from 'react-icons/bi';
+import { AiOutlineUnorderedList } from 'react-icons/ai';
 
 export default function MobileNav() {
       const [height, setHeight] = useState(0);
@@ -12,10 +12,10 @@ const toggleDropdown = () => setHeight(height === 0 ? 'auto' : 0)
 
 
     return (
-        <div className="component mobile-nav">
+        <div  className="component mobile-nav">
         <div className="icon-container">
         <IconContext.Provider value={{ className: "chevron" }}>
-        <span className="dropdown-icon" alt="dropdown icon"   aria-controls="id" src={dropdownIcon} onClick={toggleDropdown} >{height === 0 ? <BiChevronDownCircle /> : <BiChevronUpCircle />}</span>
+        <span  className="dropdown-icon" alt="dropdown icon"   aria-controls="id" src={dropdownIcon} onClick={toggleDropdown} ><AiOutlineUnorderedList /></span>
         </IconContext.Provider>
         </div>
         <AnimateHeight id="id" duration={250} height={height}>

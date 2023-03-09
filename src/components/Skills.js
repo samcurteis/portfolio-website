@@ -49,6 +49,10 @@ const { ref: skills, inView: skillsInView} = useInView({
         <i className="devicon-mongodb-plain"></i>        
              <p className="skill-name">MongoDB</p>
         </div>  
+         <div className="skill">  
+        <i class="devicon-flask-original"></i>
+             <p className="skill-name">Flask</p>
+        </div>  
         <div className="skill">  
         <i className="devicon-postgresql-plain"></i>     
              <p className="skill-name">PostgreSQL</p>
@@ -60,6 +64,10 @@ const { ref: skills, inView: skillsInView} = useInView({
         <div className="skill">  
         <i className="devicon-nodejs-plain"></i>         
              <p className="skill-name">Node.js</p>
+        </div>  
+        <div className="skill">  
+        <i class="devicon-docker-plain"></i>
+             <p className="skill-name">Docker</p>
         </div>  
         <div className="skill">  
         <i className="devicon-git-plain"></i>            

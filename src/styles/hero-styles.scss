@@ -39,3 +39,10 @@ url("../assets/personal-pics/bike-standing.jpg");
         }
     }
 }
+
+@media (max-width: 750px) {
+    .hero {
+    background-position-x: 70%;
+    background-size: cover;
+}
+}
