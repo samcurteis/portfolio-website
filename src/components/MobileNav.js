@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import AnimateHeight from 'react-animate-height';
-import dropdownIcon from '../assets/black-icons/dropdown-icon.png'
 import { IconContext } from "react-icons";
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 
@@ -15,7 +14,7 @@ const toggleDropdown = () => setHeight(height === 0 ? 'auto' : 0)
         <div  className="component mobile-nav">
         <div className="icon-container">
         <IconContext.Provider value={{ className: "chevron" }}>
-        <span  className="dropdown-icon" alt="dropdown icon"   aria-controls="id" src={dropdownIcon} onClick={toggleDropdown} ><AiOutlineUnorderedList /></span>
+        <span  className="dropdown-icon" alt="dropdown icon"   aria-controls="id" onClick={toggleDropdown} ><AiOutlineUnorderedList /></span>
         </IconContext.Provider>
         </div>
         <AnimateHeight id="id" duration={250} height={height}>

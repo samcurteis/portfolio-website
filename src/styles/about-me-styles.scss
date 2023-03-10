@@ -113,6 +113,16 @@
 }
 }
 
+@media (max-width: 550px) {
+    .about-me {
+        .options {
+            .chevrons {
+                font-size: 70px;
+            }
+        }
+    }
+}
+    
 @media (max-width: 373px) {
     .about-me {
         .options {

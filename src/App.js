@@ -17,6 +17,10 @@ import './styles/contact-styles.scss';
 
 import './styles/carousel-styles.scss';
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
+
 function App() {
         
 
@@ -29,6 +33,7 @@ function App() {
       <Experience />
       <AboutMe />
       <Contact />
+      <ToastContainer />
       </div>
   );
 }

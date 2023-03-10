@@ -1,7 +1,3 @@
-// import Postman from '../assets/black-icons/postman.svg'
-// import TablePlus from '../assets/black-icons/tableplus.png'
-// import Cloudinary from '../assets/black-icons/cloudinary.png
-// import Netlify from '../assets/black-icons/netlify.svg'
 import { useInView } from 'react-intersection-observer';
 
 
@@ -21,7 +17,7 @@ const { ref: skills, inView: skillsInView} = useInView({
         <p className="skill-name">HTML</p>
         </div>
         <div className="skill">  
-        <i class="devicon-css3-plain"></i>
+        <i className="devicon-css3-plain"></i>
         <p className="skill-name">CSS</p>
         </div>  
   
@@ -50,7 +46,7 @@ const { ref: skills, inView: skillsInView} = useInView({
              <p className="skill-name">MongoDB</p>
         </div>  
          <div className="skill">  
-        <i class="devicon-flask-original"></i>
+        <i className="devicon-flask-original"></i>
              <p className="skill-name">Flask</p>
         </div>  
         <div className="skill">  

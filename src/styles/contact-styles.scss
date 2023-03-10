@@ -9,13 +9,85 @@
 .contact {
     @include flexbox($theme: column);
     margin-block: 50px 100px;
+    width: 100%;
     .section {
     @include flexbox;
     }
+    .links {
+        @include flexbox;
+        flex-wrap: wrap;
+    }
+    
 img {
     width: 40px;
     padding: 10px;
      -webkit-filter: drop-shadow(2px 9px 4px black);
   filter: drop-shadow(2px 9px 4px black);
+}
+
+form {
+    @include flexbox($theme: column);
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 40px;
+    padding-inline: 20px;
+    width: 90%;
+    .title {
+        display: flex;
+        align-self: center;
+    }
+        input, textarea, label, button {
+            margin: 10px;
+            border-radius: 5px;
+        }
+        input, textarea {
+            box-shadow: 2px 3px 2px black;
+            height: 22px;
+            background-color: #EBEAEF;
+            padding: 2px;
+            font-family:inherit;
+            border: none;
+        }
+        input:focus, textarea:focus {
+    outline: none;
+    border:2px solid #415247;
+  }
+        label {
+            margin-bottom: 0px;
+            font-size: 17px;
+        }
+        textarea {
+            height: auto;
+            min-height: 88px;
+            width: 90%;
+        }
+        input {
+            width: 70%;
+            min-width: 200px;
+        }
+        .subject {
+            width: 80%;
+        }
+        .name {
+            width: 55%
+        }
+        button {
+            display: flex;
+            align-self: flex-end;
+            font-size: 20px;
+            box-shadow: 2px 3px 2px black;
+            padding: 13px;
+            margin-right: 20px;
+    background-color: #415247;
+            border: none;
+        }
+}
+}
+
+@media (max-width: 450px) {
+    .contact {
+    .links {
+        flex-direction: column;
+    }
 }
 }

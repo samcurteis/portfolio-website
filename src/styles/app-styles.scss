@@ -21,6 +21,10 @@ html {
     overflow-x: hidden;
 }
 
+:root {
+    --toastify-color-success: #17C28C;
+}
+
 ::-webkit-scrollbar {
     background-color: #2F2C2D; 
   height: 6px;
@@ -63,11 +67,11 @@ html {
     background-color: #2F2C2D; 
     overflow: hidden;
     overflow: clip;
+    color: #EBEAEF;
    a, button {
     text-decoration: none;
     color: #EBEAEF;
        }
-    color: #EBEAEF;
 }
 
 i{ display: flex;
