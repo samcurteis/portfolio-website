@@ -41,25 +41,29 @@ const { ref: skills, inView: skillsInView} = useInView({
         <i className="devicon-django-plain"></i>         
              <p className="skill-name">Django</p>
         </div>  
-        <div className="skill">  
-        <i className="devicon-mongodb-plain"></i>        
-             <p className="skill-name">MongoDB</p>
-        </div>  
          <div className="skill">  
         <i className="devicon-flask-original"></i>
              <p className="skill-name">Flask</p>
-        </div>  
-        <div className="skill">  
-        <i className="devicon-postgresql-plain"></i>     
-             <p className="skill-name">PostgreSQL</p>
         </div>  
         <div className="skill">  
         <i className="devicon-python-plain"></i>         
              <p className="skill-name">Python</p>
         </div>  
         <div className="skill">  
-        <i className="devicon-nodejs-plain"></i>         
-             <p className="skill-name">Node.js</p>
+        <i className="devicon-java-plain"></i>         
+             <p className="skill-name">Java</p>
+        </div>  
+        <div className="skill">  
+        <i className="devicon-spring-plain"></i>         
+             <p className="skill-name">Spring</p>
+        </div>  
+        <div className="skill">  
+        <i className="devicon-mongodb-plain"></i>        
+             <p className="skill-name">MongoDB</p>
+        </div>  
+        <div className="skill">  
+        <i className="devicon-postgresql-plain"></i>     
+             <p className="skill-name">PostgreSQL</p>
         </div>  
         <div className="skill">  
         <i class="devicon-docker-plain"></i>

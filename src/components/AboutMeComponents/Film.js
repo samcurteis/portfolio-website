@@ -41,7 +41,7 @@ const breakpoint = 580;
         {
             src: maman,
             title: "Petite Maman",
-            director: "Celine Schiamma"
+            director: "Celine Sciamma"
         },
         {
             src: medea,
@@ -50,7 +50,7 @@ const breakpoint = 580;
         },
         {
             src: oncle,
-            title: "Mon Oncle D'Amerique",
+            title: "My American Uncle",
             director: "Alain Resnais"
         },
         {
@@ -66,7 +66,7 @@ const breakpoint = 580;
         {
             src: succession,
             title: "Succession",
-            director: null
+            director: "Jesse Armstrong"
         },
         {
             src: tiffany,
@@ -81,12 +81,12 @@ const breakpoint = 580;
         {
             src: atlanta,
             title: "Atlanta",
-            director: null
+            director: "Donal Glover" 
         },
         {
             src: squid,
             title: "Squid Game",
-            director: null
+            director: "Hwang Dong-Hyuk" 
         },
     ]
 
@@ -121,6 +121,7 @@ const breakpoint = 580;
         {images.map((image) => (
         <div className="image-container" key={image.src}>
         <img src={image.src} alt={image.title} id={image.index} />
+            <p><span>{image.title}</span>, {image.director}</p>
             </div>
         ))}
         </div>

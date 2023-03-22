@@ -19,7 +19,7 @@ export default function Contact() {
     emailjs.sendForm('service_1m0cjg4', 'template_sc0597r', form.current, '7dVYbnJZqPDBI70P2')
       .then((result) => {
           console.log(result.text);
-      NOTIFY.SUCCESS('Thanks for getting in touch!')
+      NOTIFY.SUCCESS('Message sent')
       form.current.reset();
       }, (error) => {
           console.log(error.text);

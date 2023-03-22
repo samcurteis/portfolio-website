@@ -34,6 +34,7 @@
     }
 .section-carousel {
     @include flexbox;
+    width: 100%;
 .section-container {
     width: 100%;
     padding-top: 20px;
@@ -45,14 +46,28 @@
         width: 1300%;
         max-width: 9100px;
         .image-container {
-            @include flexbox;
+            @include flexbox($theme: column);
             width: 100%;
-            padding: 5px;
+            height: 100%;
             img {
                 width: 90%;
+                height: 80%;
+                margin: 0;
                 border-radius: 7px;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 box-shadow: 5px 5px 10px black;
+            }
+            span {
+                font-style: italic;
+            }
+            p {
+                height: 10%;
+                font-size: 13px;
+                padding: 0;
+                margin: 0;
+                padding-left: 20px;
+                width: 90%;
+                margin: 0;
             }
     }
 }
