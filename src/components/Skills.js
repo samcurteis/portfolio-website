@@ -30,6 +30,10 @@ export default function Skills() {
         <p className="skill-name">React.js</p>
         </div>  
         <div className="skill">  
+        <i class="devicon-adonisjs-original"></i>
+        <p className="skill-name">Redux</p>
+        </div>  
+        <div className="skill">  
         <i class="devicon-jest-plain"></i>
         <p className="skill-name">Jest</p>
         </div>  
@@ -48,14 +52,6 @@ export default function Skills() {
         <div className="skill">  
         <i className="devicon-python-plain"></i>         
         <p className="skill-name">Python</p>
-        </div>  
-        <div className="skill">  
-        <i className="devicon-java-plain"></i>         
-        <p className="skill-name">Java</p>
-        </div>  
-        <div className="skill">  
-        <i className="devicon-spring-plain"></i>         
-        <p className="skill-name">Spring</p>
         </div>  
         <div className="skill">  
         <i className="devicon-mongodb-plain"></i>        

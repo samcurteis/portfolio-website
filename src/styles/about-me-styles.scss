@@ -6,10 +6,11 @@
     align-items: center;
 }
 
-    .about-me, .experience {
+    .about-me {
     @include flexbox($theme: column);
         .piece {
-        margin: 20px;
+            width: 100%;
+            margin-block: 15px;
     }
     .headshot {
         width: 200px;
