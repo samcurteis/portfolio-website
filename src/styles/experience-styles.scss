@@ -1,15 +1,17 @@
-@mixin flexbox($theme: row) {
+@mixin flexbox($theme: column) {
 
     display: flex;
     flex-direction: $theme;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .experience {
         width: 80vw;
         max-width: 900px;
     .experience-section {
+    @include flexbox;
+        width: 100%;
         margin: 10px;
         margin-block: 15px;
         .location {
