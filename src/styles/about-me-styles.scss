@@ -21,6 +21,13 @@
             box-shadow: 5px 5px 20px black;
             -moz-box-shadow: 5px 5px 20px black;
       -webkit-box-shadow: 5px 5px 20px black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      img {
+          height: 230px;
+          width: auto;
+      }
     }
     .brand-statement {
         text-align: center;

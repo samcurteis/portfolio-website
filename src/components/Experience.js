@@ -71,7 +71,7 @@ const { ref: efl, inView: eflInView} = useInView(setting);
         <li>Oversaw long-term study plans to improve students’ abilities.</li>
         </ul>
 
-        <p>Skills: communication, project management, team leadership, critical analysis.</p>
+        <p><strong>Skills: </strong>communication, project management, team leadership, critical analysis.</p>
         </ div>
       </div>
     )

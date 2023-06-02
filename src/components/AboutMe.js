@@ -1,4 +1,4 @@
-import headshot from '../assets/personal-pics/headshot.jpg';
+import headshot from '../assets/personal-pics/headshot.png';
 import { IconContext } from "react-icons";
 import { BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
