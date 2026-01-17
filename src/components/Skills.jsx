@@ -9,6 +9,7 @@ export default function Skills() {
       className={'component skills ' + (skillsInView ? 'show' : 'hidden')}
       ref={skills}
     >
+      <span className='m-anchor' id='m-skills'></span>
       <span className='anchor' id='skills'></span>
       <h2 className='title'>Skills </h2>
       <div className='icons'>

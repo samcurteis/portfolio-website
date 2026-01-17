@@ -45,6 +45,7 @@ export default function AboutMe() {
 
   return (
     <div className='component about-me'>
+      <span className='m-anchor' id='m-about-me'></span>
       <span className='anchor' id='about-me'></span>
       <h2 className={'title ' + (titleInView ? 'show' : 'hidden')} ref={title}>
         About Me

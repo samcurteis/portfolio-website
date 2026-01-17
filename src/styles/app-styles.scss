@@ -88,12 +88,17 @@ li {
 }
 
 .anchor,
+.m-anchor,
 .options-anchor {
   display: block;
   height: 10vh; /*same height as header*/
   margin-top: -10vh; /*same height as header*/
   visibility: hidden;
   width: 100%;
+}
+
+.m-anchor {
+  scroll-margin-top: 30vh;
 }
 
 .options-anchor {
