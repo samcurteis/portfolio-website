@@ -25,16 +25,29 @@ export default function MobileNav() {
       <AnimateHeight id='id' duration={250} height={height}>
         <div className='navbar-options'>
           <p className='navbar-item'>
-            <a href='#experience'>Experience</a>
+            <a onClick={toggleDropdown} href='#skills'>
+              Skills
+            </a>
           </p>
           <p className='navbar-item'>
-            <a href='#projects'>Projects</a>
+            <a onClick={toggleDropdown} href='#experience'>
+              Experience
+            </a>
           </p>
           <p className='navbar-item'>
-            <a href='#about-me'>About Me</a>
+            <a onClick={toggleDropdown} href='#projects'>
+              Projects
+            </a>
           </p>
           <p className='navbar-item'>
-            <a href='#contact'>Contact</a>
+            <a onClick={toggleDropdown} href='#about-me'>
+              About Me
+            </a>
+          </p>
+          <p className='navbar-item'>
+            <a onClick={toggleDropdown} href='#contact'>
+              Contact
+            </a>
           </p>
         </div>
       </AnimateHeight>

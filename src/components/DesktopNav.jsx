@@ -12,7 +12,7 @@ export default function DesktopNav() {
     >
       <div className='nav-options'>
         <p className='navbar-item'>
-          <a href='#skills'></a>
+          <a href='#skills'>Skills</a>
         </p>
         <p className='navbar-item'>
           <a href='#experience'>Experience</a>
