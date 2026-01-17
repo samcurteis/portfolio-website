@@ -25,10 +25,10 @@ export default function MobileNav() {
       <AnimateHeight id='id' duration={250} height={height}>
         <div className='navbar-options'>
           <p className='navbar-item'>
-            <a href='#projects'>Projects</a>
+            <a href='#experience'>Experience</a>
           </p>
           <p className='navbar-item'>
-            <a href='#experience'>Experience</a>
+            <a href='#projects'>Projects</a>
           </p>
           <p className='navbar-item'>
             <a href='#about-me'>About Me</a>

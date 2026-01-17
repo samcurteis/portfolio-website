@@ -24,8 +24,8 @@ function App() {
     <div className='page'>
       <Hero />
       <Navbar />
-      <Projects />
       <Experience />
+      <Projects />
       <AboutMe />
       <Contact />
       <ToastContainer />
