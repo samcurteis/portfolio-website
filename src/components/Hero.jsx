@@ -1,4 +1,5 @@
 import { useInView } from 'react-intersection-observer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Hero() {
   const { ref: hero, inView: heroInView } = useInView({
@@ -20,7 +21,7 @@ export default function Hero() {
             rel='noopener noreferrer'
           >
             {' '}
-            <i className='devicon-linkedin-plain'></i>
+            <FontAwesomeIcon icon='fa-brands fa-linkedin' size='3x' />
           </a>
           <a
             href='https://github.com/samcurteis'
@@ -28,8 +29,8 @@ export default function Hero() {
             rel='noopener noreferrer'
           >
             {' '}
-            <i className='devicon-github-original'></i>
           </a>
+          <FontAwesomeIcon icon='fa-brands fa-github' size='3x' />
         </div>
       </div>
     </div>

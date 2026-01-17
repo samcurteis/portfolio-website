@@ -13,65 +13,40 @@ export default function Skills() {
       <h2 className='title'>Skills </h2>
       <div className='icons'>
         <div className='skill'>
-          <i className='devicon-html5-plain'></i>
-          <p className='skill-name'>HTML</p>
+          <i class='devicon-nextjs-original-wordmark'></i>
+          <p className='skill-name'>Next.js</p>
         </div>
         <div className='skill'>
-          <i className='devicon-css3-plain'></i>
-          <p className='skill-name'>CSS</p>
+          <i class='devicon-typescript-plain'></i>
+          <p className='skill-name'>Typescript</p>
         </div>
-
         <div className='skill'>
-          <i className='devicon-javascript-plain'></i>
-          <p className='skill-name'>JavaScript</p>
+          <i class='devicon-vitest-plain'></i>
+          <p className='skill-name'>Vitest</p>
+        </div>
+        <div className='skill'>
+          <i class='devicon-csharp-plain'></i>
+          <p className='skill-name'>C#</p>
+        </div>
+        <div className='skill'>
+          <i class='devicon-go-original-wordmark'></i>
+          <p className='skill-name'>GoLang</p>
+        </div>
+        <div className='skill'>
+          <i class='devicon-terraform-plain'></i>
+          <p className='skill-name'>Terraform</p>
+        </div>
+        <div className='skill'>
+          <i class='devicon-cypressio-plain'></i>
+          <p className='skill-name'>Cypress</p>
         </div>
         <div className='skill'>
           <i className='devicon-react-original'></i>
           <p className='skill-name'>React.js</p>
         </div>
         <div className='skill'>
-          <i class='devicon-adonisjs-original'></i>
-          <p className='skill-name'>Redux</p>
-        </div>
-        <div className='skill'>
-          <i class='devicon-jest-plain'></i>
-          <p className='skill-name'>Jest</p>
-        </div>
-        <div className='skill'>
           <i className='devicon-sass-original'></i>
           <p className='skill-name'>SASS</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-express-original'></i>
-          <p className='skill-name'>Express</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-django-plain'></i>
-          <p className='skill-name'>Django</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-python-plain'></i>
-          <p className='skill-name'>Python</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-mongodb-plain'></i>
-          <p className='skill-name'>MongoDB</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-postgresql-plain'></i>
-          <p className='skill-name'>PostgreSQL</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-git-plain'></i>
-          <p className='skill-name'>Git</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-heroku-original'></i>
-          <p className='skill-name'>Heroku</p>
-        </div>
-        <div className='skill'>
-          <i className='devicon-npm-original-wordmark'></i>
-          <p className='skill-name'>npm</p>
         </div>
       </div>
     </div>

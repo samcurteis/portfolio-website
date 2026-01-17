@@ -12,6 +12,9 @@ export default function DesktopNav() {
     >
       <div className='nav-options'>
         <p className='navbar-item'>
+          <a href='#skills'></a>
+        </p>
+        <p className='navbar-item'>
           <a href='#experience'>Experience</a>
         </p>
         <p className='navbar-item'>

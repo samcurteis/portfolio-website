@@ -1,48 +1,48 @@
 @mixin flexbox($theme: row) {
-
-    display: flex;
-    flex-direction: $theme;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: $theme;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
+  @include flexbox($theme: column);
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/personal-pics/bike-standing.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  .content {
     @include flexbox($theme: column);
-    align-items: flex-start;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-url("../assets/personal-pics/bike-standing.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 92vh;
-    width: 100vw;
-    margin: 0;
-    .content {
-        @include flexbox($theme: column);
-        align-content: space-between;
+    align-content: space-between;
     width: 50vw;
-        h1, h2 {
-            padding: 10px;
-            text-align: left;
-            margin-inline: 30px;
-        }
-        h2 {
-            margin-top: 10px;
-        }
-        .icons {
-            @include flexbox;
-            i {
-                padding: 0;
-                padding-block: 5px;
-                margin: 0;
-            }
-        }
+    h1,
+    h2 {
+      padding: 10px;
+      text-align: left;
+      margin-inline: 30px;
     }
+    h2 {
+      margin-top: 10px;
+    }
+    .icons {
+      @include flexbox;
+      i {
+        padding: 0;
+        padding-block: 5px;
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 750px) {
-    .hero {
+  .hero {
     background-position-x: 70%;
     background-size: cover;
-}
+  }
 }
