@@ -29,7 +29,7 @@ export default function Education() {
         </div>
         </div>
         <ul>
-        <li>Planned structured lessons that adhered to a string time frame.</li>
+        <li>Planned structured lessons that adhered to a strict time frame.</li>
         <li>Presented in front of and supervised the learning of large groups.</li>
         <li>Delivered close analyses of student's language abilities.</li>
         </ul>

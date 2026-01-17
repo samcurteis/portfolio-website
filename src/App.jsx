@@ -1,10 +1,9 @@
 import Navbar from './components/Navbar';
-import Skills from './components/Skills.js';
-import Projects from './components/Projects.js';
-import Experience from './components/Experience.js';
-import AboutMe from './components/AboutMe.js'; 
-import Contact from './components/Contact.js';
-import Hero from './components/Hero.js';
+import Projects from './components/Projects.jsx';
+import Experience from './components/Experience.jsx';
+import AboutMe from './components/AboutMe.jsx';
+import Contact from './components/Contact.jsx';
+import Hero from './components/Hero.jsx';
 
 import './styles/app-styles.scss';
 import './styles/hero-styles.scss';
@@ -20,21 +19,17 @@ import './styles/carousel-styles.scss';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 
-
 function App() {
-        
-
   return (
-      <div className="page">
+    <div className='page'>
       <Hero />
       <Navbar />
-      <Skills />
       <Projects />
       <Experience />
       <AboutMe />
       <Contact />
       <ToastContainer />
-      </div>
+    </div>
   );
 }
 
