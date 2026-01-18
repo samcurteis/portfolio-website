@@ -63,7 +63,7 @@ export default function Experience() {
             <h3 className='italic'>Realize Security</h3>
           </div>
           <div className='second'>
-            <h3>Apr 2023 - Present</h3>
+            <h3>Apr 2023 - Oct 2023</h3>
             <h3 className='italic'>Remote</h3>
           </div>
         </div>
